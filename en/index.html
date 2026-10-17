@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" data-page-lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ubicá el Sol | Precision Challenge with the Argentine Flag</title>
+<meta name="description" content="An original challenge: adjust the sun size, place it in the centre of the Argentine flag and share your precision score. Free, no sign-up, works on mobile." />
+<link rel="canonical" href="https://ubicaelsol.com/en/" />
+<meta name="theme-color" content="#4a90d9" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Ubicá el Sol | Precision Challenge with the Argentine Flag" />
+<meta property="og:description" content="Adjust the sun size, place it in the centre of the Argentine flag and share your precision score." />
+<meta property="og:url" content="https://ubicaelsol.com/en/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="Ubicá el Sol" />
+<meta property="og:image" content="https://ubicaelsol.com/assets/img/og-default.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Precision challenge with the Argentine flag" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Ubicá el Sol | Precision Challenge" />
+<meta name="twitter:description" content="Place the sun in the centre of the Argentine flag and share your precision score." />
+<meta name="twitter:image" content="https://ubicaelsol.com/assets/img/og-default.png" />
+<link rel="alternate" hreflang="es-AR" href="https://ubicaelsol.com/" />
+<link rel="alternate" hreflang="en" href="https://ubicaelsol.com/en/" />
+<link rel="alternate" hreflang="x-default" href="https://ubicaelsol.com/" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='30' fill='%23f7c02e'/%3E%3C/svg%3E" />
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png" />
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png" />
+<link rel="stylesheet" href="../assets/css/styles.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Ubicá el Sol",
+  "url": "https://ubicaelsol.com/en/",
+  "inLanguage": "en",
+  "description": "Original precision challenge with the Argentine flag."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "Ubicá el Sol",
+  "url": "https://ubicaelsol.com/en/",
+  "applicationCategory": "Game",
+  "genre": "Puzzle",
+  "operatingSystem": "Web",
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "description": "Place the sun in the centre of the Argentine flag and adjust its size to score the highest precision."
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#jugar">Skip to the game</a>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="30" fill="#fff3c4"/><g stroke="#fff3c4" stroke-width="6" stroke-linecap="round"><line x1="50" y1="6" x2="50" y2="18"/><line x1="50" y1="82" x2="50" y2="94"/><line x1="6" y1="50" x2="18" y2="50"/><line x1="82" y1="50" x2="94" y2="50"/></g></svg>
+      </span>
+      <span class="brand__text">Ubicá el Sol<small data-i18n="brand.tag">Precision challenge</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
+    <nav class="site-nav" aria-label="Main">
+      <a href="#jugar" data-i18n="nav.play">Play</a>
+      <a href="how-to-play.html" data-i18n="nav.howto">How to play</a>
+      <a href="the-challenge.html" data-i18n="nav.about">The challenge</a>
+      <a href="faq.html" data-i18n="nav.faq">FAQ</a>
+      <span class="lang-switch" role="group" aria-label="Language">
+        <a class="lang-link" data-lang="es" href="../">ES</a>
+        <a class="lang-link" data-lang="en" href="../en/" aria-current="true">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <span class="hero__badge"><span class="dot" aria-hidden="true"></span><span data-i18n="hero.badge">Original challenge</span></span>
+      <h1 data-i18n="hero.title">Can you place the sun in the exact centre?</h1>
+      <p class="hero__sub" data-i18n="hero.sub">Adjust the size, place the symbol and find out how accurate you are. Three rounds, one score to share.</p>
+      <div class="hero__actions">
+        <button type="button" class="btn btn--sun btn--lg" data-start="quick" data-i18n="hero.playQuick">Play quick</button>
+        <a class="btn btn--ghost btn--lg" href="how-to-play.html" data-i18n="hero.howtoLink">How to play</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="challenge-banner" id="challenge-banner" hidden>
+      <span class="challenge-banner__text" id="challenge-banner-text"></span>
+      <span class="challenge-banner__actions">
+        <button type="button" class="btn btn--sun" id="challenge-accept" data-i18n="banner.cta">Accept the challenge</button>
+        <button type="button" class="btn btn--ghost" id="challenge-close" aria-label="Close notice" data-i18n-attr="aria-label:banner.close">×</button>
+      </span>
+    </div>
+  </div>
+
+  <section class="game-wrap" id="jugar">
+    <div class="container">
+      <div class="game-grid">
+        <div class="panel board-panel">
+          <div class="board-head">
+            <span class="board-head__label"><span data-i18n="board.round">Round</span> <span id="round-label">1 / 3</span></span>
+            <span class="round-track" id="round-track" aria-hidden="true"></span>
+            <span class="pill pill--time" id="timer-pill" hidden>⏱ <span id="timer-value">20s</span></span>
+          </div>
+
+          <div class="board" id="game-board" aria-label="Challenge board">
+            <div class="board__flag" aria-hidden="true">
+              <div class="board__band--a"></div>
+              <div class="board__band--b"></div>
+              <div class="board__band--c"></div>
+            </div>
+            <div class="board__lines" aria-hidden="true"></div>
+            <div class="board__ghost" id="game-ghost" aria-hidden="true"></div>
+            <div class="sun" id="game-sun"></div>
+            <div class="board__start" id="board-start">
+              <h2 data-i18n="board.start.title">Think you can do it?</h2>
+              <p data-i18n="board.start.desc2">One round and done, or a full three-round challenge.</p>
+              <button type="button" class="btn btn--sun btn--lg btn--block" id="btn-start-quick" data-i18n="board.quick.btn">Play quick</button>
+              <button type="button" class="btn btn--ghost btn--block" id="btn-start" data-i18n="board.start.btn">Start challenge</button>
+            </div>
+          </div>
+
+          <div class="controls">
+            <p class="control-hint">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5a7089" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/><circle cx="12" cy="12" r="4"/></svg>
+              <span data-i18n="board.drag">Drag the sun to move it</span>
+            </p>
+            <div class="control-row">
+              <label for="size-range" data-i18n="board.size">Sun size</label>
+              <input type="range" id="size-range" min="0.12" max="0.45" step="0.002" value="0.25" />
+            </div>
+            <div class="controls__actions">
+              <button type="button" class="btn btn--ghost" id="btn-reset" data-i18n="board.reset">Recenter</button>
+              <button type="button" class="btn btn--primary" id="btn-confirm"><span data-btn-label data-i18n="board.confirm">Confirm result</span></button>
+            </div>
+            <label class="control-hint" style="margin-top:12px; cursor:pointer;">
+              <input type="checkbox" id="guide-toggle" style="accent-color:#2f6fb5;" />
+              <span data-i18n="board.guides">Show guides</span>
+            </label>
+          </div>
+        </div>
+
+        <aside class="panel score-panel">
+          <h2 class="mt-0" data-i18n="score.title">Your challenge</h2>
+
+          <div class="score-card__row"><span data-i18n="score.round">Current round</span><span class="score-card__val" id="stat-round">1 / 3</span></div>
+          <div class="score-card__row"><span data-i18n="score.best">Best score</span><span class="score-card__val" id="stat-best">0%</span></div>
+          <div class="score-card__row"><span data-i18n="score.plays">Games played</span><span class="score-card__val" id="stat-plays">0</span></div>
+          <div class="score-card__row"><span data-i18n="score.mode">Mode</span><span class="score-card__val" id="stat-mode">Classic</span></div>
+
+          <hr class="sep" />
+
+          <h2 data-i18n="mode.title">Choose a mode</h2>
+          <div class="mode-list">
+            <label class="mode-option">
+              <input type="radio" name="mode" value="quick" />
+              <span class="mode-option__body">
+                <strong data-i18n="mode.quick.title">Quick</strong>
+                <small data-i18n="mode.quick.desc">A single round, instantly.</small>
+              </span>
+            </label>
+            <label class="mode-option">
+              <input type="radio" name="mode" value="classic" checked />
+              <span class="mode-option__body">
+                <strong data-i18n="mode.classic.title">Classic</strong>
+                <small data-i18n="mode.classic.desc">Three rounds, no pressure.</small>
+              </span>
+            </label>
+            <label class="mode-option">
+              <input type="radio" name="mode" value="timed" />
+              <span class="mode-option__body">
+                <strong data-i18n="mode.timed.title">Time attack</strong>
+                <small data-i18n="mode.timed.desc">Three rounds, 20 seconds each.</small>
+              </span>
+            </label>
+            <label class="mode-option">
+              <input type="radio" name="mode" value="daily" />
+              <span class="mode-option__body">
+                <strong data-i18n="mode.daily.title">Daily challenge</strong>
+                <small data-i18n="mode.daily.desc">Everyone plays the same flag today.</small>
+              </span>
+            </label>
+          </div>
+
+          <hr class="sep" />
+          <p style="color:var(--ink-500); font-size:0.86rem; margin:0;" data-i18n="score.hint">Tip: find the centre first, then adjust the size.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <div class="ad-slot" data-ad-slot="home-mid" aria-hidden="true">Advertising</div>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2 data-i18n="how.title">How the challenge works</h2>
+        <p data-i18n="how.sub">Four simple steps, no complicated rules.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><div class="step__num">1</div><h3 data-i18n="how.1.t">Pick a mode</h3><p data-i18n="how.1.d">Quick, classic, time attack or daily challenge.</p></div>
+        <div class="step"><div class="step__num">2</div><h3 data-i18n="how.2.t">Move the sun</h3><p data-i18n="how.2.d">Drag it with the mouse or your finger to where you think it belongs.</p></div>
+        <div class="step"><div class="step__num">3</div><h3 data-i18n="how.3.t">Adjust the size</h3><p data-i18n="how.3.d">Use the slider so the symbol keeps the right proportion.</p></div>
+        <div class="step"><div class="step__num">4</div><h3 data-i18n="how.4.t">Confirm and share</h3><p data-i18n="how.4.d">You will get a precision percentage ready to share.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="section__head">
+        <h2 data-i18n="feat.title">Built to be played anywhere</h2>
+      </div>
+      <div class="feature-grid">
+        <div class="feature">
+          <div class="feature__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3a2400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><line x1="12" y1="18" x2="12" y2="18.01"/></svg>
+          </div>
+          <h3 data-i18n="feat.1.t">Works on mobile</h3>
+          <p data-i18n="feat.1.d">Designed for touch screens, with simple and comfortable controls.</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3a2400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          </div>
+          <h3 data-i18n="feat.2.t">Short sessions</h3>
+          <p data-i18n="feat.2.d">Three rounds and a score. Perfect for a few spare minutes.</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3a2400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 3v10"/><path d="M8 7l4-4 4 4"/></svg>
+          </div>
+          <h3 data-i18n="feat.3.t">A result worth sharing</h3>
+          <p data-i18n="feat.3.d">Copy your score or post it on X and challenge your friends.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2 data-i18n="faq.title">Frequently asked questions</h2>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>What is Ubicá el Sol?</summary>
+          <p>It is an original precision challenge. You place the sun in the centre of the Argentine flag and adjust its size to get as close as possible to the ideal proportion.</p>
+        </details>
+        <details>
+          <summary>How do you play?</summary>
+          <p>Drag the sun with the mouse or your finger, adjust the size with the slider and tap "Confirm result" to see your score.</p>
+        </details>
+        <details>
+          <summary>Do I need to sign up or pay?</summary>
+          <p>No. The game is free and your best score is stored locally on your own device.</p>
+        </details>
+        <details>
+          <summary>How is the score calculated?</summary>
+          <p>The score combines how close the sun centre was to the ideal centre and how similar its size was to the ideal proportion.</p>
+        </details>
+        <details>
+          <summary>Is this an official site?</summary>
+          <p>No. Ubicá el Sol is an independent, original project. It has no official relationship with other games, creators or brands.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="cta-band">
+        <h2 data-i18n="cta.title">Ready to test your aim?</h2>
+        <p data-i18n="cta.text">It is free, no sign-up needed, and works on mobile.</p>
+        <a class="btn btn--sun btn--lg" href="#jugar" data-i18n="cta.btn">Play now</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Ubicá el Sol</h4>
+        <p class="footer-brand">An independent precision challenge inspired by the Argentine flag, built as a casual browser game experiment.</p>
+      </div>
+      <div>
+        <h4>Game</h4>
+        <div class="footer-links">
+          <a href="index.html#jugar">Play now</a>
+          <a href="how-to-play.html">How to play</a>
+          <a href="the-challenge.html">The challenge</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+      </div>
+      <div>
+        <h4>Language</h4>
+        <div class="footer-links">
+          <a href="../index.html">Español</a>
+          <a href="index.html">English</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-disclaimer">
+      <p>© <span data-year>2026</span> Ubicá el Sol. Unofficial site. Games and brands mentioned belong to their respective creators.</p>
+      <p>This project is an original creation and is not affiliated with, associated with or endorsed by third parties.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="result-overlay" id="result-overlay" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="result-title">
+  <div class="result-card">
+    <span class="result-card__label" id="result-title" data-i18n="result.title">Final result</span>
+    <div class="result-card__score"><span id="result-score-value">0</span><span class="unit">%</span></div>
+    <div class="result-card__grade is-good" id="result-grade">Almost perfect!</div>
+    <p class="result-card__note" id="result-note"></p>
+    <div class="result-breakdown">
+      <div class="result-breakdown__item"><b id="result-pos">0%</b><span data-i18n="result.breakdown.position">Position</span></div>
+      <div class="result-breakdown__item"><b id="result-size">0%</b><span data-i18n="result.breakdown.size">Size</span></div>
+      <div class="result-breakdown__item"><b id="result-total">0%</b><span data-i18n="result.breakdown.total">Total</span></div>
+    </div>
+    <button type="button" class="btn btn--sun btn--block" id="result-again" data-i18n="result.playAgain">Play again</button>
+    <canvas class="share-canvas" id="share-canvas" width="1080" height="1080" role="img" aria-label="Result card"></canvas>
+    <div class="result-actions">
+      <div class="result-actions__row">
+        <button type="button" class="btn btn--ghost" id="result-download" data-i18n="share.download">Download image</button>
+        <button type="button" class="btn btn--ghost" id="result-share" data-i18n="share.image">Share image</button>
+      </div>
+      <div class="result-actions__row">
+        <button type="button" class="btn btn--ghost" id="result-copy" data-i18n="share.copy">Copy text</button>
+        <button type="button" class="btn btn--ghost" id="result-share-x">X</button>
+      </div>
+      <button type="button" class="btn btn--ghost btn--block btn--sm" id="result-challenge-full" data-i18n="result.challengeFull">Try the full challenge</button>
+      <button type="button" class="btn btn--ghost btn--block btn--sm" id="result-close" data-i18n="result.close">Close</button>
+    </div>
+    <p class="result-share-note" data-i18n="result.copyNote">Your result was copied to the clipboard.</p>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="../assets/js/config.js"></script>
+<script src="../assets/js/sun.js"></script>
+<script src="../assets/js/scoring.js"></script>
+<script src="../assets/js/analytics.js"></script>
+<script src="../assets/js/share.js"></script>
+<script src="../assets/js/i18n.js"></script>
+<script src="../assets/js/site.js"></script>
+<script src="../assets/js/game.js"></script>
+<script src="../assets/js/ads.js"></script>
+<script src="../assets/js/consent.js"></script>
+</body>
+</html>

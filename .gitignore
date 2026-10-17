@@ -1,0 +1,48 @@
+# dependencies
+node_modules/
+vendor/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pip/
+
+# build output
+.vercel/
+.netlify/
+dist/
+build/
+*.egg-info/
+
+# secrets and local env
+.env
+.env.*
+!.env.example
+*.local
+service-account.json
+*credential*.json
+*-key.json
+*.pem
+*.p12
+*.keystore
+
+# logs
+*.log
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.code-workspace
+
+# os
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# design references (not shipped at runtime)
+assets/img/suns.png

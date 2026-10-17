@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://ubicaelsol.com/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es-AR" href="https://ubicaelsol.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ubicaelsol.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ubicaelsol.com/" />
+    <image:image>
+      <image:loc>https://ubicaelsol.com/assets/img/og-default.png</image:loc>
+      <image:title>Reto de precisión con la bandera argentina</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://ubicaelsol.com/como-jugar.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es-AR" href="https://ubicaelsol.com/como-jugar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ubicaelsol.com/en/how-to-play.html" />
+  </url>
+
+  <url>
+    <loc>https://ubicaelsol.com/centra-el-sol-juego.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es-AR" href="https://ubicaelsol.com/centra-el-sol-juego.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ubicaelsol.com/en/the-challenge.html" />
+  </url>
+
+  <url>
+    <loc>https://ubicaelsol.com/en/the-challenge.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-AR" href="https://ubicaelsol.com/centra-el-sol-juego.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ubicaelsol.com/en/the-challenge.html" />
+  </url>
+
+  <url>
+    <loc>https://ubicaelsol.com/preguntas-frecuentes.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-AR" href="https://ubicaelsol.com/preguntas-frecuentes.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ubicaelsol.com/en/faq.html" />
+  </url>
+
+  <url>
+    <loc>https://ubicaelsol.com/en/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es-AR" href="https://ubicaelsol.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ubicaelsol.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ubicaelsol.com/" />
+  </url>
+
+  <url>
+    <loc>https://ubicaelsol.com/en/how-to-play.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es-AR" href="https://ubicaelsol.com/como-jugar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ubicaelsol.com/en/how-to-play.html" />
+  </url>
+
+  <url>
+    <loc>https://ubicaelsol.com/en/faq.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-AR" href="https://ubicaelsol.com/preguntas-frecuentes.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ubicaelsol.com/en/faq.html" />
+  </url>
+
+  <url>
+    <loc>https://ubicaelsol.com/privacidad.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://ubicaelsol.com/cookies.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://ubicaelsol.com/contacto.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://ubicaelsol.com/en/privacy.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://ubicaelsol.com/en/cookies.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://ubicaelsol.com/en/contact.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

@@ -1,0 +1,16 @@
+{
+  "name": "ubica-el-sol",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Ubicá el Sol — original precision challenge with the Argentine flag.",
+  "scripts": {
+    "og": "python tools/make_og.py",
+    "seo": "python tools/apply_seo_meta.py",
+    "gsc": "node tools/gsc-report.mjs"
+  },
+  "dependencies": {
+    "@vercel/og": "^1.0.3",
+    "react": "^19.3.1"
+  }
+}
