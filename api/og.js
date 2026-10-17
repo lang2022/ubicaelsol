@@ -1,7 +1,7 @@
 import { ImageResponse } from "@vercel/og";
 import React from "react";
 
-export const config = { runtime: "edge" };
+export const config = { runtime: "nodejs20.x" };
 
 const h = React.createElement;
 const STATIC_FALLBACK = "https://ubicaelsol.com/assets/img/og-default.png";
